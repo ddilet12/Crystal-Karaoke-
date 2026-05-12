@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-serif-display: "Cinzel", serif;
+  
+  --color-brand-red: #FF0033;
+  --color-brand-dark-red: #990022;
+  --color-brand-black: #050505;
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .red-glow {
+    box-shadow: 0 0 20px rgba(255, 0, 51, 0.4);
+  }
+
+  .neon-text {
+    text-shadow: 0 0 8px rgba(255, 0, 51, 0.8);
+  }
+
+  .text-outline-white {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+  }
+
+  .vertical-rail {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+  }
+}
